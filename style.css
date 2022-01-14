@@ -13,6 +13,7 @@
 .title-img{
     width: 440px;
     height: 414px;
+    margin-left: 100px;
 }
 .title-info .preebook-button{
     text-decoration: none;
@@ -20,4 +21,20 @@
     padding: 15px;
     border-radius: 5px;
     background-image: linear-gradient(45deg,#E02C6D,red);
+}
+/* second-section */
+.second-section{
+    margin-top: 150px;
+
+    justify-content: center;
+}
+.websites{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap:50px ;
+    position: absolute;
+    width: 85px;
+    height: 25px;
+    left: 485px;
+   
 }
