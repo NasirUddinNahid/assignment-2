@@ -1,15 +1,75 @@
+/*****------------
+header
+-------------******/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@200;500;600;700;800&family=Roboto:wght@100;300;400;500&display=swap');
+*{
+   
+    margin:0;
+    padding:0;
+    font-family: "poppins", sans-serif;
+}
+header{
+   max-width:100%;
+}
+
+
+header .nav-section{
+    
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 8px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-name h3{
+    font-weight: bold;
+    font-size:25px;
+}
+.navbar ul{
+    display:flex;
+    
+}
+.navbar ul li{
+    margin-right: 20px;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-weight:600;
+    font-size: 16px;
+    color:#3A3A3A;
+}
+.navbar ul li a i{
+    font-size:24px;
+    font-weight:600;
+}
+
+/******
+main
+*******/
+
 
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+/*
+common styles
+*/
+.container{
+    width: 870px;
 }
 /* --------------------------------------
 first section->title - info and image
 --------------- ---------------------*/
 .first-section{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
     width: 1050px;
@@ -28,7 +88,7 @@ first section->title - info and image
 .title-info .preebook-button{
     text-decoration: none;
     color: white;
-    padding: 15px;
+    padding: 5px;
     border-radius: 5px;
     background-image: linear-gradient(45deg,#E02C6D,red);
 }
@@ -39,8 +99,10 @@ second-section->web - sites
 .second-section{
     margin-top: 150px;
     margin-bottom: 100px;
-
-   
+}
+ .hr-one{
+    background-color: white;
+    margin-bottom: 20px;
 }
 .websites{
     display: grid;
@@ -56,6 +118,7 @@ second-section->web - sites
 ---------------------------------- */
 .third-section{
     width: 1200px;
+    margin-bottom: 20px;
 }
 .popular-collections h1{
     font-weight: 600;
@@ -67,7 +130,7 @@ margin-bottom: 30px;
  .collections{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 40px;
+    grid-column-gap: 20px;
     grid-row-gap: 40px;
 
     
@@ -113,6 +176,7 @@ margin-bottom: 30px;
     width: 75px;
     font-weight: bold;
     font-size: 20px;   
+    margin-top: 30px;
 }
 
 /*------------- fourth-section------------ */
@@ -121,6 +185,7 @@ margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     width: 1050px;
+    margin-bottom: 40px;
     
 }
 .title-info h1{
@@ -167,8 +232,152 @@ footer{
 /*
 Responsive for mobile 
 */
+@media only screen and (max-width:688px){
+    .container{
+        width:100%;
+    }
+/* header */
+.nav-section{
+    width: 250px;
+}
+    /* first-section */
+    .first-section ,.websites{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+      
+    }
+.first-section .title-info{
+    width: 300px;
+}
+.first-section .title-img img{
+    width: 200px;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 20px;
+}
 
-
+/*****
+second-section
+********/
+.second-section {
+   margin-top: 20px;
+}
+.second-section .websites img{
+    width: 200px;
+ 
+}
+/* third-section */
+.popular-collections h1{
+    width: 300px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+/* fourth-section */
+.fourth-section {
+    display: grid;
+    grid-template-columns: repeat(1,1fr); 
+  
+}
+.fourth-section .title-img img{
+    width: 250px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+    }
+.fourth-section .title-info{
+width: 200px;
+margin-top: 50px;
+margin-right: 20px;
+}
+/* footer */
+.for-footer{
+    width: 300px;
+}
+footer{
+    width: 100%;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+}
 /*
 Responsive for tab
 */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width:100%;
+    }
+/* header */
+.nav-section{
+    width: 250px;
+}
+    /* first-section */
+    .first-section ,.websites{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+      
+    }
+.first-section .title-info{
+    width: 300px;
+}
+.first-section .title-img img{
+    width: 200px;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+
+/*****
+second-section
+********/
+.second-section {
+   margin-top: 20px;
+}
+.second-section .websites img{
+    width: 200px;
+ 
+}
+/* third-section */
+.popular-collections h1{
+    width: 800px;
+    
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:10px;
+}
+/* fourth-section */
+.fourth-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+  
+}
+.fourth-section .title-img img{
+    width: 300px;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    
+    }
+.fourth-section .title-info{
+width: 300px;
+margin-top: 50px;
+margin-right: 20px;
+}
+/* footer */
+.for-footer{
+    width: 800px;
+}
+footer{
+    width: 100%;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+}
