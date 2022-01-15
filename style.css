@@ -114,3 +114,61 @@ margin-bottom: 30px;
     font-weight: bold;
     font-size: 20px;   
 }
+
+/*------------- fourth-section------------ */
+.fourth-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1050px;
+    
+}
+.title-info h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.title-img{
+    width: 440px;
+    height: 414px;
+    margin-right: 100px;
+    
+}
+.title-info .preebook-button{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg,#E02C6D,red);
+}
+
+/* ---------------
+footer
+--------------- */
+
+footer{
+    width: 100%;
+    height: 230px;
+    background-color: #030333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.footer-info .writing{
+    text-align: center;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 25px;
+}
+/************************************************************************/
+
+/*
+Responsive for mobile 
+*/
+
+
+/*
+Responsive for tab
+*/
