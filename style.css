@@ -9,20 +9,18 @@ header
     font-family: "poppins", sans-serif;
 }
 header{
-   max-width:100%;
+   width:870px;
 }
-
-
-header .nav-section{
-    
+ .nav-section{
+      
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    grid-column-gap: 8px;
+    grid-column-gap: 440px;
     padding-top:50px;
     padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
+   justify-content: center;
     align-items: center;
+    margin-left: 1000px;
 }
 .logo-name h3{
     font-weight: bold;
@@ -33,9 +31,11 @@ header .nav-section{
     
 }
 .navbar ul li{
-    margin-right: 20px;
-    list-style: none;
+     margin-right: 20px;
+    list-style: none; 
+  
 }
+
 .navbar ul li a{
     text-decoration: none;
     font-weight:600;
@@ -45,6 +45,7 @@ header .nav-section{
 .navbar ul li a i{
     font-size:24px;
     font-weight:600;
+    
 }
 
 /******
@@ -88,9 +89,13 @@ first section->title - info and image
 .title-info .preebook-button{
     text-decoration: none;
     color: white;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: 10px;
     background-image: linear-gradient(45deg,#E02C6D,red);
+  
+}
+.preebook-button .arrow{
+       margin-left: 6px; 
 }
 /* ------------------------
 second-section->web - sites
@@ -167,7 +172,9 @@ margin-bottom: 30px;
     font-size: 14px;
 }
 .more-products{
-    margin-left: 1050px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    margin-left: 990px;
     
 }
 .more-products .seemore{
@@ -181,28 +188,31 @@ margin-bottom: 30px;
 
 /*------------- fourth-section------------ */
 .fourth-section{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
     width: 1050px;
     margin-bottom: 40px;
     
 }
-.title-info h1{
+
+
+.photography-img img{
+    width: 300px;
+    height: px;
+    margin-left: 100px;
+    
+}
+.photography-info h1{
     font-weight: bold;
     font-size: 50px;
 }
-.title-img{
-    width: 440px;
-    height: 414px;
-    margin-right: 100px;
-    
-}
-.title-info .preebook-button{
+.photography-info .dream-button{
     text-decoration: none;
-    color: #ffffff;
-    padding: 15px;
-    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
     background-image: linear-gradient(45deg,#E02C6D,red);
 }
 
@@ -217,7 +227,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: white;
+}
+.footer-title{
+    text-align: center;
 }
 .footer-info .writing{
     text-align: center;
@@ -225,14 +239,14 @@ footer{
 .icons{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 25px;
+    grid-column-gap: 20px;
 }
 /************************************************************************/
 
 /*
 Responsive for mobile 
 */
-@media only screen and (max-width:688px){
+@media only screen and (max-width:414px){
     .container{
         width:100%;
     }
@@ -241,11 +255,13 @@ Responsive for mobile
     width: 250px;
 }
     /* first-section */
-    .first-section ,.websites{
+    .first-section {
         display: grid;
         grid-template-columns: repeat(1,1fr); 
+        margin-left: 40px;
       
     }
+  
 .first-section .title-info{
     width: 300px;
 }
@@ -261,6 +277,11 @@ second-section
 ********/
 .second-section {
    margin-top: 20px;
+}
+.websites{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 90px;
 }
 .second-section .websites img{
     width: 200px;
@@ -273,6 +294,7 @@ second-section
 .collections{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    margin-left: 55px;
 }
 /* fourth-section */
 .fourth-section {
@@ -280,21 +302,22 @@ second-section
     grid-template-columns: repeat(1,1fr); 
   
 }
-.fourth-section .title-img img{
+.fourth-section .photography-img img{
     width: 250px;
     align-items: center;
     margin-bottom: 10px;
-    margin-left: 0px;
+    
     
     }
-.fourth-section .title-info{
+.fourth-section .photography-info{
 width: 200px;
 margin-top: 50px;
 margin-right: 20px;
+margin-left: 70px;
 }
 /* footer */
 .for-footer{
-    width: 300px;
+    width: 414px;
 }
 footer{
     width: 100%;
@@ -304,28 +327,49 @@ footer{
     grid-template-columns: repeat(4,1fr);
 }
 }
+
+
+
+
+
+
+
+
+
+
 /*
 Responsive for tab
 */
-@media only screen and (min-width:688px) and (max-width:992px){
-    .container{
-        width:100%;
-    }
+
+
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+   
 /* header */
 .nav-section{
-    width: 250px;
+      
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 5px;
+    padding-top:50px;
+    padding-bottom: 50px;
+   justify-content: center;
+    align-items: center;
+    margin-left: 5px;
 }
     /* first-section */
-    .first-section ,.websites{
+    .first-section {
         display: grid;
         grid-template-columns: repeat(2,1fr); 
+       
       
     }
+    
 .first-section .title-info{
-    width: 300px;
+    margin-left: 40px;
 }
 .first-section .title-img img{
-    width: 200px;
+    width: 250px;
     align-items: center;
     margin-top: 60px;
     margin-right: 20px;
@@ -334,11 +378,16 @@ Responsive for tab
 /*****
 second-section
 ********/
+.websites{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 90px;
+    }
 .second-section {
    margin-top: 20px;
 }
 .second-section .websites img{
-    width: 200px;
+    width: 150px;
  
 }
 /* third-section */
@@ -350,34 +399,39 @@ second-section
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap:10px;
+    margin-left: 40px;
+    width: 800px;
 }
+
 /* fourth-section */
 .fourth-section {
     display: grid;
     grid-template-columns: repeat(2,1fr); 
-  
-}
-.fourth-section .title-img img{
-    width: 300px;
     align-items: center;
-    margin-bottom: 10px;
-    
-    
-    }
-.fourth-section .title-info{
-width: 300px;
-margin-top: 50px;
-margin-right: 20px;
+    width: 1000px;
 }
+.fourth-section .photography-img {
+    width: 10PX;  
+    align-items: center;
+    }
+    .fourth-section .photography-info{
+        width: 70%;
+        align-items: center;
+        margin-right: 200px;
+        }
 /* footer */
 .for-footer{
-    width: 800px;
+    width: 1000px;
+    justify-content: center;
 }
 footer{
     width: 100%;
+    justify-content: center;
 }
 .icons{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    
+    
 }
 }
