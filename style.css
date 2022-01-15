@@ -1,9 +1,18 @@
 
-/* first section */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* --------------------------------------
+first section->title - info and image
+--------------- ---------------------*/
 .first-section{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1050px;
     
 }
 .title-info h1{
@@ -14,6 +23,7 @@
     width: 440px;
     height: 414px;
     margin-left: 100px;
+    
 }
 .title-info .preebook-button{
     text-decoration: none;
@@ -22,19 +32,85 @@
     border-radius: 5px;
     background-image: linear-gradient(45deg,#E02C6D,red);
 }
-/* second-section */
+/* ------------------------
+second-section->web - sites
+--------------------------- */
+
 .second-section{
     margin-top: 150px;
+    margin-bottom: 100px;
 
-    justify-content: center;
+   
 }
 .websites{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-gap:50px ;
-    position: absolute;
-    width: 85px;
-    height: 25px;
-    left: 485px;
    
+  
+   
+}
+
+/* ---------------------------------
+    third section ->top collection
+---------------------------------- */
+.third-section{
+    width: 1200px;
+}
+.popular-collections h1{
+    font-weight: 600;
+font-size: 30px;
+text-align: center;
+margin-bottom: 30px;
+
+}
+ .collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+
+    
+}
+ .products{
+    box-shadow: 10px gray;
+}
+.collection-banner img{
+    width: 300px;
+    height: 256px;
+
+}
+.collection-info .collection-title{
+    font-weight: 500;
+    font-size: 28px;
+}
+.collection-info .price{
+    font-size: 25px;
+}
+ .rating-collections{
+     display: flex;
+  align-items: center;
+    
+}
+.rating-collections .fa-star{
+    color: #ffd700;
+}
+ .rate{
+    margin-left: 10px;
+}
+.facilities{
+    color: #787885;
+    font-weight: bold;
+    font-size: 14px;
+}
+.more-products{
+    margin-left: 1050px;
+    
+}
+.more-products .seemore{
+    text-decoration: none;
+    color: #E02C6D;
+    width: 75px;
+    font-weight: bold;
+    font-size: 20px;   
 }
